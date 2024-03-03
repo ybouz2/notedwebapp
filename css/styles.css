@@ -1,0 +1,260 @@
+/* importeer het Colendra font uit onze eigen map */
+@font-face {
+  font-family: 'Colendra';
+  src: url('../assets/ColendraRegular.otf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* importeer ook de bold gedrukte versie van het Colendra font
+   uit onze eigen map */
+@font-face {
+  font-family: 'Colendra';
+  src: url('../assets/ColendraBold.otf');
+  font-style: normal;
+  font-weight: 700;
+  /* bold */
+}
+
+/* CSS reset */
+*, html {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url(../images/dot_background.png);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 25px 60px 0 rgba(0, 0, 0, 0.19);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 5%;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: auto;
+  overflow: hidden;
+}
+
+img[alt="NOTED."] {
+  margin: 25px;
+  width: 125px;
+}
+
+main {
+  background-image: url(../images/house.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #FAFAFA;
+  position: absolute;
+  overflow: scroll;
+  top: 125px;
+  bottom: 80px;
+  left: 0px;
+  right: 0px;
+}
+
+h1 {
+  font-family: 'Colendra', sans-serif;
+  font-size: 14pt;
+  line-height: 1.8em;
+  color: #1D1D1B;
+  font-weight: bold;
+  /* bold */
+  text-align: center;
+  padding: 0.25em;
+  margin-left: 95px;
+}
+
+h2 {
+  font-family: 'Colendra', sans-serif;
+  font-weight: 700;
+  font-size: 10pt;
+  line-height: 1.8em;
+  color: #1D1D1B;
+}
+
+i {
+  color: #B7B7B7;
+  margin-top: 0.5em;
+  font-weight: lighter;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 8pt;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: #FFFFFF;
+  padding: 1.5em;
+}
+
+img {
+  width: 200px;
+}
+
+ul {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 8pt;
+  list-style: none;
+  margin-top: 0.5em;
+}
+
+iframe {
+  width: 255px;
+  height: 100px;
+  margin-top: 2em;
+}
+
+section {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 14px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 20px;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF;
+  width: 75%;
+  border: solid white;
+  text-align: center;
+}
+
+section p {
+  margin-top: 1em;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+
+footer ul li img {
+  width: 25%;
+}
+
+main a h2, main section {
+  font-size: 14pt;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 14px 0 rgba(0, 0, 0, 0.19);
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  background-color: #FFFFFF;
+  border: solid white;
+  text-align: center;
+}
+
+main a h2 {
+  margin-top: 1.25em;
+}
+
+header section {
+  display: flex;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 14px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Colendra', sans-serif;
+  font-size: 14pt;
+  line-height: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  padding-left: 25px;
+  margin-top: 0;
+  width: 100%;
+}
+
+/* de volgende code is afkomstig van: https://supfort.com/pure-css-accordion-without-javascript (met eigen styling)*/
+input {
+  display: none;
+}
+
+input+label+article {
+  display: none;
+}
+
+input:checked+label+article {
+  display: block;
+}
+
+article {
+  font-size: .825em;
+  line-height: 1.4em;
+  padding: 1em;
+  text-align: center;
+  background-color: white;
+  width: 75%;
+  margin: auto;
+  margin-top: -3em;
+  margin-bottom: 2em;
+}
+
+label {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  font-family: 'Colendra', sans-serif;
+  font-size: 14pt;
+  line-height: 1.8em;
+  color: #1D1D1B;
+  font-weight: bold;
+  padding: 2em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 14px 0 rgba(0, 0, 0, 0.19);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF;
+  width: 75%;
+  border: solid white;
+  text-align: center;
+}
+
+label img:nth-child(2) {
+  margin-top: 0.5em;
+}
+
+label::after {
+  font-family: "Font Awesome 5 Free";
+  content: '\f0d7';
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  right: auto;
+  top: auto;
+  margin-top: 70px;
+  margin-left: 215px;
+  color: #B7B7B7;
+}
+
+input:checked+label::after {
+  content: '\f0d8';
+}
+
+/* Einde van de bron*/
+.titel {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 3px 14px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 0;
+}
